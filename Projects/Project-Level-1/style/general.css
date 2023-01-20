@@ -1,0 +1,254 @@
+/* 
+[Font weight]:
+
+default: 400
+
+------------------------
+[Font sizing](px):
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 70 / 74 / 86 / 98
+       
+------------------------
+[Spacing system] (px):
+
+2 / 4 / 8 / 12 / 16 / 20 / 24 / 32 / 36 / 44 / 48 / 64 / 80 / 93 / 96 / 124 / 128
+
+------------------------
+[Line height]:
+
+default: 1
+
+------------------------
+[Colors]:
+main: 
+#ff3e66
+--------
+#e6385c
+Grey: 
+#0e1133
+#262947
+#565870
+#77788b
+
+#555
+#bbb
+#ccc
+secondary: 
+#eef0f6
+
+#6f9cf8
+#eef4fe
+
+#6cd494
+#effaf3
+
+#ffb848
+
+
+[Border-Radius]:
+4px
+5px
+8px
+18px
+12px
+*/
+
+/* ---(( GENERAL STYLING ))--- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #ff3e656d;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #0e1133;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 133.6rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ( Heading ) */
+.primery-heading {
+  font-size: 7rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.075;
+}
+.primery-heading span {
+  font-weight: 400;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ff3e66;
+  margin-bottom: 1.6rem;
+}
+
+.secondary-heading {
+  font-size: 4.4rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 1.8rem;
+}
+.secondary-heading-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #565870;
+}
+
+/* ( Button ) */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 100px;
+}
+
+.btn--filled,
+.btn--filled:link,
+.btn--filled:visited {
+  font-weight: 600;
+  background-color: #ff3e66;
+  color: #fff;
+  transition: all 0.3s;
+}
+.btn--filled:hover,
+.btn--filled:active {
+  background-color: #e6385c;
+}
+
+.btn--outline,
+.btn--outline:link,
+.btn--outline:visited {
+  font-weight: 500;
+  border: 2px solid #eee;
+  color: #262947;
+  transition: all 0.3s;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #eee;
+  color: #ff3e66;
+}
+
+.btn--with-icon:link,
+.btn--with-icon:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btn-icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.change-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  margin: 3.2rem 0;
+}
+.change-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 4.8rem;
+  height: 4.8rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.change-btn--black {
+  border: 2px solid #eee;
+  transition: all 0.3s;
+}
+
+.change-btn--black:hover {
+  background-color: #eee;
+  color: rgb(255, 62, 102);
+}
+
+.change-btn--white {
+  border: 2px solid rgba(255, 255, 255, 0.299);
+  color: rgba(255, 255, 255, 0.96);
+  transition: all 0.3s;
+}
+
+.change-btn--white:hover {
+  border: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.475);
+  background-color: rgba(255, 255, 255, 0.299);
+}
+
+.more-link {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.2rem;
+  margin-top: 3.2rem;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #565870;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.more-link:hover {
+  color: #e6385c;
+}
+
+.more-link-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+/* -------USED MULTIPLE TIMES------ */
+.feature-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #565870;
+}

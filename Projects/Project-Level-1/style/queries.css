@@ -1,0 +1,461 @@
+/* ******************************* */
+/* BELOW 1366px Small PC's */
+
+@media (max-width: 85em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero-section {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .hero-content-box {
+    transform: translateY(-3.2rem);
+  }
+
+  .email-input {
+    width: 80%;
+  }
+
+  .marketing-img {
+    width: 90%;
+  }
+
+  .mr-img {
+    width: 75%;
+  }
+
+  .testimonial-box {
+    margin: 0 8rem;
+    padding: 12rem 12rem;
+    max-width: 90%;
+  }
+}
+
+/* ************************************ */
+/* BELOW 1200px Landscape Tablets */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 3.2rem 8rem 20rem;
+  }
+
+  .hero-content-box {
+    margin-left: 8rem;
+  }
+
+  .marketing-content {
+    max-width: 90%;
+    height: 50rem;
+  }
+
+  .marketing-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .cta-content {
+    padding-right: 65rem;
+  }
+
+  .feature-in-content {
+    padding: 0 19rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 960px Tablets */
+
+@media (max-width: 60em) {
+  .header {
+    padding: 3.2rem 4.8rem 20rem;
+    position: relative;
+    gap: 1.6rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content-box {
+    transform: translateY(0);
+    padding: 0 6.4rem;
+    margin-left: 0;
+  }
+
+  .email-input {
+    width: 65%;
+  }
+
+  .hero-img {
+    /* 60% of parent element */
+    width: 43rem;
+    /* To apply "justify-self: end" */
+  }
+
+  .hero-img-box {
+    justify-self: end;
+  }
+
+  .feature-box {
+    padding: 4.8rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  .marketing-text {
+    padding-right: 6.4rem;
+  }
+
+  .marketing-points {
+    margin-right: 0;
+  }
+  .marketing-img-box {
+    transform: translateY(4.4rem);
+  }
+
+  .marketing-img {
+    width: 100%;
+  }
+
+  .counter-content {
+    gap: 3rem;
+  }
+
+  .cta-content {
+    padding-right: 45rem;
+  }
+
+  .pricing-options {
+    gap: 3.2rem;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+  }
+
+  .footer-important-links {
+    gap: 3.2rem;
+  }
+
+  /* Moblie Navigation */
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6.4rem;
+  }
+  .item-link:link,
+  .item-link:visited {
+    font-size: 3.6rem;
+  }
+  .link-icon {
+    font-size: 2.4rem;
+  }
+
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+
+    background-color: #eef0f6;
+    position: absolute;
+    transition: all 0.4s;
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .navigation-opened .navigation-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mob-nav-button {
+    display: block;
+  }
+  .navigation-opened [name="menu-outline"] {
+    display: none;
+  }
+
+  .navigation-opened [name="close-outline"] {
+    display: block;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+/* **************************** */
+/* BELOW 760px Small Tablets */
+
+@media (max-width: 47.5em) {
+  .grid-3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 3.2rem;
+  }
+
+  .features-header a {
+    align-self: center;
+  }
+
+  .features-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .marketing-content {
+    padding: 3.6rem;
+    grid-template-columns: 1fr;
+  }
+  .marketing-text {
+    text-align: center;
+    padding-right: 0;
+  }
+  .marketing-img-box {
+    display: none;
+  }
+
+  .mr-fr-contnet {
+    gap: 3.2rem;
+  }
+
+  .counter-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.6rem;
+  }
+
+  .counter {
+    box-shadow: 0 1.6rem 1.8rem 1.6rem rgb(0, 0, 0, 0.05);
+  }
+
+  .cta-content {
+    padding-right: 30rem;
+  }
+
+  .pricing-option:last-child {
+    transform: translateX(55%);
+  }
+
+  .contact {
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+/* **************************** */
+/* BELOW 544px Small Tablets */
+@media (max-width: 34em) {
+  html {
+    font-size: 43.5%;
+  }
+
+  .grid-2-cols,
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .primery-heading {
+    font-size: 3.6rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .secondary-heading-description {
+    font-size: 1.6rem;
+  }
+
+  .header {
+    padding: 3.2rem 4.8rem 12.8rem;
+  }
+
+  .mob-nav-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  .hero-content-box {
+    padding: 0 4.8rem;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .email-input input {
+    font-size: 1.6rem;
+
+    padding: 1.8rem 0;
+  }
+  .email-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .hero-img {
+    width: 20rem;
+  }
+
+  .features-content {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-box {
+    text-align: center;
+  }
+
+  .feature-icon {
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+  }
+
+  .more-link {
+    justify-content: center;
+  }
+
+  .marketing-content {
+    padding: 3.2rem;
+  }
+
+  .marketing-points {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+
+  .mr-img-box {
+    justify-self: center;
+  }
+  .mr-img {
+    width: 90%;
+  }
+
+  .colored-bullet-point {
+    border: 1px solid #15262c;
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  .counter-content {
+    grid-template-columns: 1fr;
+    padding: 0 1.6rem;
+  }
+
+  .how-to-media {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .how-to-video {
+    flex-basis: 0;
+  }
+
+  .video-text {
+    padding: 0;
+  }
+
+  .video-text p:first-child {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .video-btn {
+    margin-left: 0;
+  }
+
+  .change-btns {
+    display: none;
+  }
+
+  .cta-content {
+    padding-right: 0;
+  }
+
+  .app-links {
+    width: 90%;
+  }
+
+  .app-link:link {
+    border-radius: 14px;
+  }
+
+  .pricing-option:last-child {
+    transform: translateX(0);
+  }
+
+  .testimonial-box {
+    margin: 0 auto;
+    padding: 4.8rem 3.2rem;
+    gap: 3.6rem;
+  }
+
+  .testimonial-text {
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .author-button {
+    justify-content: center;
+  }
+  .testimonial-auther {
+    text-align: center;
+  }
+
+  .feature-in-content {
+    padding: 0 6rem;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1.6rem;
+    padding-top: 6.4rem;
+  }
+
+  .footer-content {
+    margin-bottom: 6.4rem;
+  }
+
+  .brand {
+    padding-right: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .address {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    margin-bottom: 6.4rem;
+  }
+
+  .footer-ios-link .app-icon {
+    align-self: flex-start;
+  }
+}
